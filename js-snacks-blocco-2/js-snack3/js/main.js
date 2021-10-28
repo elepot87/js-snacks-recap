@@ -14,7 +14,7 @@
 
 const numeri = [1, 3, 2, 6, 11, 30, 8, 20, 9, 0];
 let somma = 0;
-for (i = 0; i < 10; i++) {
+for (let i = 0; i < numeri.length; i++) {
   if (i % 2 !== 0) {
     somma += numeri[i];
   }

@@ -19,7 +19,13 @@ const lastNames = [
   "Gemma",
 ];
 
+document.body.innerHTML = "<h1>i tre invitati sono";
 for (let i = 0; i < 3; i++) {
-  const guests = `${firstNames[i]} ${lastNames[i]}`;
-  console.log(guests);
+  let index1 = Math.floor(Math.random() * firstNames.length);
+  let index2 = Math.floor(Math.random() * lastNames.length);
+  const invitato = `${firstNames[index1]} ${lastNames[index2]}`;
+  document.body.innerHTML += " " + "<h4>" + invitato + "</h4>";
+  console.log(invitato);
 }
+
+document.body.innerHTML += "</h1>";
